@@ -4,13 +4,14 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
 export default function App() {
+  const appName = "My first App";
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Header</Text>
       </View>
       <View style={styles.content}>
-        <Text>Hello, World!</Text>
+        <Text>Hello, Welcome to my {appName}!</Text>
       </View>
       <View style={styles.footer}>
         <Text style={styles.footerText}>Footer</Text>
