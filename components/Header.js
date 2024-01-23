@@ -4,11 +4,16 @@ import React from "react";
 export default function Header({ name, version }) {
   return (
     <View>
-      <Text>
-        Hello, Welcome to my {name}! This is {version}
+      <Text style={styles.header}>
+        Welcome to my {name}! This is {version}
       </Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  header: {
+    borderWidth: 2,
+    borderColor: "purple",
+  },
+});
